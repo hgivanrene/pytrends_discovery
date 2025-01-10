@@ -55,7 +55,7 @@ def main_extraction():
         print(f"Inserting data for symbol {symbol}")
 
         # Insert data from each row of the dataframe. Load.
-        insert_sql = f'''INSERT INTO PHYGITAL_PROD.BRONZE_LAYER.STOCK_MARKET_VALUES (
+        insert_sql = f'''INSERT INTO {sf_database}.{sf_schema}.STOCK_MARKET_VALUES (
                             SHORTNAME,
                             LONGNAME,
                             SYMBOL,
